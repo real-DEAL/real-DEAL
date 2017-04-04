@@ -1,0 +1,26 @@
+{
+  "name": "real-deal",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/real-DEAL/real-DEAL.git"
+  },
+  "author": "Olivia Sabo-Rush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/real-DEAL/real-DEAL/issues"
+  },
+  "homepage": "https://github.com/real-DEAL/real-DEAL#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2"
+  }
+}
