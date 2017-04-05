@@ -3,10 +3,8 @@
   <div class="container">
 
     <div class="choices">
-      <div ng-click="switch('alice')" class="devName"><img src="../assets/name-a.png" alt="Alice Lai"></div>
-      <div ng-click="switch('devin')" class="devName"><img src="../assets/name-d.png" alt="Alice Lai"></div>
-      <div ng-click="switch('eric')" class="devName"><img src="../assets/name-e.png" alt="Alice Lai"></div>
-      <div ng-click="switch('liv')" class="devName"><img src="../assets/name-o.png" alt="Alice Lai"></div>
+
+      <div ng-click="switch(dev)" ng-repeat="dev in devs" class="devName round" style="color: {{person.color}}">{{ dev }}</div>
     </div>
 
     <div class="row">
@@ -14,14 +12,14 @@
         <h1>
           <img ng-src="{{ person.img }}" class="round img-responsive" alt="">
         </h1>
-        <div><a href="mailto:{{ person.email }}">Contact {{ person.name1 }}</a></div>
+        <a href="mailto:{{ person.email }}"><img src="../assets/mail.png" class="round mail img-responsive" alt=""></a>
       </div>
 
       <div class="col-sm-9 col-xs-9">
         <h3 class="quote">"{{ person.quote }}"</h3>
-        <div class="row main">
+        <div class="row main shadow">
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <h1 style="margin-top: 10px;">About {{ person.name1 }} {{ person.name2 }}</h1>
+            <h1 style="margin-top: 10px;">{{ person.name1 }} {{ person.name2 }}</h1>
             {{ person.bio }}
           </div>
 

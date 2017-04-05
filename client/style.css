@@ -34,7 +34,7 @@ nav li, .display li {
 }
 
 .wrapper {
-  padding-top: 100px;
+  padding-top: 50px;
   /*padding-bottom: -75px;*/
   /*height: 100vh;
   /*overflow-y: hidden;*/
@@ -56,10 +56,16 @@ nav li, .display li {
 }
 
 .main {
-  /*padding: 0;*/
-  /*margin: 0 15px;*/
+  border-radius: 6px;
+  padding-bottom: 50px;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
+}
+
+.mail {
+  width: 25%;
+  position: absolute;
+  bottom: 10px;
 }
 
 .round {
@@ -92,15 +98,19 @@ nav li, .display li {
 
 .choices {
   display: flex;
-  width: 280px;
+  width: 400px;
   margin: auto;
-  margin-bottom: 25px;
 }
 
 .devName {
   margin: 10px;
-  transform: rotate(5deg);
+  min-width: 100px;
+  text-align: center;
+  /*transform: rotate(5deg);*/
+  background: #fff;
+  font-size: 25px;
   font-weight: bold;
+  padding: 15px;
 }
 
 .info {
@@ -123,6 +133,8 @@ nav li, .display li {
 }
 
 .jumbotron {
+  border: none;
+  border-radius: 0;
   background-image: url('assets/jewelBackBig.png');
   background-position: center;
 }

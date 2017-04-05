@@ -2,7 +2,7 @@ angular.module('profileFact', [])
 .factory('profileFact', function (homeFact) {
   const devs = {};
 
-  devs.liv = {
+  devs.Olivia = {
     name1: 'Olivia',
     name2: 'Sabo-Rush',
     img: '../assets/liv.png',
@@ -19,12 +19,13 @@ angular.module('profileFact', [])
       'Design',
     ],
     email: 'w.phrush@gmail.com',
+    color: homeFact.orange,
     style: {
       'background-color': homeFact.orange,
     },
   };
 
-  devs.eric = {
+  devs.Eric = {
     name1: 'Eric',
     name2: 'Periou',
     img: '../assets/eric.jpg',
@@ -33,12 +34,13 @@ angular.module('profileFact', [])
     specialties: ['NodalJS', 'Docker', 'React', 'Deployment'],
     email: 'eperiou@yahoo.com',
 
+    color: homeFact.purple,
     style: {
       'background-color': homeFact.purple,
     },
   };
 
-  devs.alice = {
+  devs.Alice = {
     name1: 'Alice',
     name2: 'Lai',
     img: '../assets/alice.jpg',
@@ -46,12 +48,13 @@ angular.module('profileFact', [])
     quote: 'Social entrepreneurs are not content just to give a fish or teach how to fish. They will not rest until they have revolutionized the fishing industry. -Bill Drayton',
     specialties: ['JavaScript', 'ES6', 'Angular', 'React', 'Nodal', 'SQL/NoSQL', 'Express', 'Ionic', 'Cordova', 'HTML', 'CSS'],
     email: 'aplai168@gmail.com',
+    color: homeFact.aqua,
     style: {
       'background-color': homeFact.aqua,
     },
   };
 
-  devs.devin = {
+  devs.Devin = {
     name1: 'Devin',
     name2: 'Fields',
     img: '../assets/devin.jpg',
@@ -72,6 +75,7 @@ angular.module('profileFact', [])
       'Bootstrap',
     ],
     email: 'defields923@gmail.com',
+    color: homeFact.green,
     style: {
       'background-color': homeFact.green,
     },

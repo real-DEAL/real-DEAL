@@ -5,8 +5,8 @@ const router = function ($routeProvider, $httpProvider) {
       controller: 'homeCtrl',
       authenticate: true,
     })
-    .when('/app', {
-      templateUrl: '../views/app.html',
+    .when('/apps', {
+      templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       authenticate: true,
     })
