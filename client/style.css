@@ -1,0 +1,148 @@
+html {
+  background: gray;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+nav {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  max-height: 100px;
+  width: 100%;
+  position: fixed;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav ul, .display ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li, .display li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.wrapper {
+  padding-top: 100px;
+  /*padding-bottom: -75px;*/
+  /*height: 100vh;
+  /*overflow-y: hidden;*/
+}
+
+.profile {
+  height: 100vh;
+  text-align: justify;
+  text-justify: inter-word;
+  transition: 1000ms;
+  background-image: url('assets/jewelBackMed.png');
+}
+
+.side {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.25);
+  padding-left: 25px;
+  min-width: 125px;
+}
+
+.main {
+  /*padding: 0;*/
+  /*margin: 0 15px;*/
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.round {
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px #111;
+}
+
+.relative {
+  position: relative;
+}
+
+.quote {
+  color: #fff;
+  text-shadow: 2px 2px 7px #111;
+}
+
+.shadow {
+  box-shadow: 2px 2px 7px #111;
+}
+
+.name {
+  color: #fff;
+  position: relative;
+  top: -50px;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 7px #111;
+  transform: rotate(5deg);
+}
+
+.choices {
+  display: flex;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.devName {
+  margin: 10px;
+  transform: rotate(5deg);
+  font-weight: bold;
+}
+
+.info {
+  margin-left: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text {
+  display: flex;
+}
+
+.about {
+  width: 250px;
+}
+
+.special {
+  width: 180px;
+  margin-left: 20px;
+}
+
+.jumbotron {
+  background-image: url('assets/jewelBackBig.png');
+  background-position: center;
+}
+
+.display {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.display li {
+  width: 200px;
+  padding: 0;
+  margin: 10px;
+}
+
+.display img {
+  height: 100px;
+}
+
+.display img:hover {
+  filter: invert(100%);
+}
