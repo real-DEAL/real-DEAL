@@ -13,6 +13,8 @@
           <img ng-src="{{ person.img }}" class="round img-responsive" alt="">
         </h1>
         <a href="mailto:{{ person.email }}"><img src="../assets/mail.png" class="round mail img-responsive" alt=""></a>
+        <a href="{{ person.github }}"><img src="../assets/gh.png" class="round mail img-responsive" alt=""></a>
+        <a href="{{ person.linkedin }}"><img src="../assets/link.png" class="round mail img-responsive" alt=""></a>
       </div>
 
       <div class="col-sm-9 col-xs-9">
@@ -34,7 +36,7 @@
               <div class="col-sm-6 col-xs-12">
                 <h4>Projects</h4>
                 <ul>
-                  <li ng-repeat="spec in person.specialties">{{ spec }}</li>
+                  <li ng-repeat="project in person.projects">{{ project }}</li>
                 </ul>
               </div>
             </div>

@@ -18,7 +18,15 @@ angular.module('profileFact', [])
       'UX',
       'Design',
     ],
+    projects: [
+      'Logoer',
+      'Breadcrumb',
+      'Spurr',
+      'What\'s happenin\'',
+    ].sort(),
     email: 'w.phrush@gmail.com',
+    github: 'http://www.github.com/livrush'
+    linkedin: 'https://www.linkedin.com/in/olivia-sabo-rush/'
     color: homeFact.orange,
     style: {
       'background-color': homeFact.orange,

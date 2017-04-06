@@ -1,5 +1,7 @@
 html {
-  background: gray;
+  background-color: gray;
+  background-image: url('assets/jewelBackMed.png');
+  background-attachment: fixed;
   font-family: sans-serif;
 }
 
@@ -86,16 +88,6 @@ nav li, .display li {
   box-shadow: 2px 2px 7px #111;
 }
 
-.name {
-  color: #fff;
-  position: relative;
-  top: -50px;
-  font-size: 25px;
-  text-align: center;
-  text-shadow: 2px 2px 7px #111;
-  transform: rotate(5deg);
-}
-
 .choices {
   display: flex;
   width: 400px;
@@ -113,36 +105,20 @@ nav li, .display li {
   padding: 15px;
 }
 
-.info {
-  margin-left: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.text {
-  display: flex;
-}
-
-.about {
-  width: 250px;
-}
-
-.special {
-  width: 180px;
-  margin-left: 20px;
-}
-
-.jumbotron {
+.jumbotron, .container .jumbotron {
+  /*margin: auto -15px;*/
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   background-image: url('assets/jewelBackBig.png');
   background-position: center;
 }
 
 .display {
-  width: 700px;
   margin: auto;
   text-align: center;
+  background: grey;
 }
 
 .display li {
