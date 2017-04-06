@@ -38,8 +38,12 @@ angular.module('Portfolio', [
     orange, aqua, purple, green,
   }
 })
-.controller('homeCtrl', function ($scope, $rootScope, profileFact) {
+.controller('homeCtrl', function ($scope, $rootScope, homeFact, profileFact) {
+  const name = () => profileFact.keys[Math.floor(Math.random() * 4)];
+
   $scope.test = (input) => { console.warn(input) };
 
-  $rootScope.person = profileFact.dev('Alice')
+  $rootScope.person = profileFact.dev(name());
+
+  $rootScope.style = $rootScope.person.style;
 });

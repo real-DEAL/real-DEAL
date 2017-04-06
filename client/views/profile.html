@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div class="wrapper profile" ng-style="style">
+<div class="wrapper profile">
   <div class="container">
 
     <div class="choices">
@@ -8,9 +8,9 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 center">
         <h1>
-          <img ng-src="{{ person.img }}" class="round img-responsive" alt="">
+          <img ng-src="{{ person.img }}" class="img-responsive" alt="">
         </h1>
         <div class="mail">
           <a href="mailto:{{ person.email }}"><img src="../assets/mail.png" class="round linkCircle" alt=""></a>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-sm-9">
-        <h3 class="quote">"{{ person.quote }}"</h3>
+        <h3 class="quote">{{ person.quote }}</h3>
         <div class="row main shadow">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <h1 style="margin-top: 10px;">{{ person.name1 }} {{ person.name2 }}</h1>

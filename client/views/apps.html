@@ -2,14 +2,15 @@
 <div class="wrapper container">
   <div class="jumbotron" ng-style="app.style">
     <div class="row">
-      <div class="col-md-4 col-sm-4">
-        <img ng-src="{{ app.img }}" class="img-responsive">
+      <div class="col-md-8 col-sm-8">
+        <!-- <img ng-src="{{ app.img }}" class="img-responsive"> -->
+        <img ng-src="{{ app.screenshots[shot] }}" ng-click="next()" class="img-responsive">
       </div>
 
-      <div class="col-md-8 col-sm-8">
+      <div class="col-md-4 col-sm-4">
         <h2>{{ app.name }}</h2>
         <p>{{ app.elevator }}</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn More</a></p>
+        <p><a href="{{ app.github }}"><img src="../assets/gh.png" class="round linkCircle" alt=""></a></p>
       </div>
     </div>
   </div>

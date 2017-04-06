@@ -1,8 +1,15 @@
-html {
-  background-color: gray;
+ html, .profile {
   background-image: url('assets/jewelBackMed.png');
+  background-position: center;
   background-attachment: fixed;
-  font-family: sans-serif;
+}
+
+a,  a:visited  {
+  color: #999;
+}
+
+a:hover, a:active {
+  color: #777;
 }
 
 body {
@@ -17,9 +24,10 @@ nav {
   max-height: 100px;
   width: 100%;
   position: fixed;
+  z-index: 10000;
 }
 
-nav a {
+nav a, nav a:visited {
   color: #fff;
 }
 
@@ -39,19 +47,53 @@ nav li, .display li {
   padding-top: 50px;
 }
 
+.jumbotron, .container .jumbotron {
+  border: none;
+  border-radius: 0px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url('assets/jewelBackBig.png');
+  background-position: center;
+}
+
+.display {
+  color: #fff;
+}
+
+.jumbotron, .display {
+  min-height: 400px;
+  margin: 0;
+}
+
+.display, footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.display img {
+  width: 30%;
+}
+
+.display img:hover {
+  filter: invert(50%);
+}
+
+footer {
+  height: 200px;
+  color: #fff;
+}
+
 .profile {
-  height: 100vh;
+  min-height: 100vh;
   text-align: justify;
   text-justify: inter-word;
   transition: 1000ms;
-  background-image: url('assets/jewelBackMed.png');
-}
-
-.side {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.25);
-  padding-left: 25px;
-  min-width: 125px;
 }
 
 .main {
@@ -69,7 +111,12 @@ nav li, .display li {
   left: 0;
 }
 
+/*.mail:first-child, .mail:last-child {
+  top: 100px;
+}*/
+
 .linkCircle {
+  position: relative;
   width: 25%;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.25);
@@ -82,6 +129,10 @@ nav li, .display li {
 
 .relative {
   position: relative;
+}
+
+.invert {
+  filter: invert(80%);
 }
 
 .quote {
@@ -114,35 +165,7 @@ nav li, .display li {
   justify-content: center;
 }
 
-.jumbotron, .container .jumbotron {
-  border: none;
-  border-radius: 0px;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-image: url('assets/jewelBackBig.png');
-  background-position: center;
-}
-
-.jumbotron, .display {
-  min-height: 400px;
-  margin: 0;
-}
-
-.display {
-  display: flex;
-  flex-direction: column;
-  /*align-content: space-around;*/
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  background: grey;
-}
-
-.display img {
-  width: 50%;
-}
-
-.display img:hover {
-  filter: invert(100%);
+.center>img {
+  height: 300px;
+  width: 300px;
 }
