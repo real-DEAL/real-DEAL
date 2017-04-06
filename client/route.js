@@ -38,7 +38,8 @@ angular.module('Portfolio', [
     orange, aqua, purple, green,
   }
 })
-.controller('homeCtrl', function ($scope) {
+.controller('homeCtrl', function ($scope, $rootScope, profileFact) {
   $scope.test = (input) => { console.warn(input) };
-})
-;
+
+  $rootScope.person = profileFact.dev('Alice')
+});
