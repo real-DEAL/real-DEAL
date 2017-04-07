@@ -66,7 +66,7 @@ angular.module('appFact', [])
       'Angular',
     ],
     github: 'https://github.com/DeFieldsEPeriou/refactoredGreenfields',
-    live: 'http://whats-happenin.real-deal.studio',
+    live: 'http://whatshappenin.real-deal.studio',
     style: {
       'background-color': homeFact.green,
     },

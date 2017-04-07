@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<div class="jumbotron" ng-if="app">
+  <div class="row">
+    <div class="col-md-8 col-sm-8">
+      <!-- <img ng-src="{{ app.img }}" class="img-responsive"> -->
+      <img ng-src="{{ app.screenshots[shot] }}" ng-click="next()" class="img-responsive">
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <h2>{{ app.name }}</h2>
+      <p>{{ app.elevator }}</p>
+      <p>
+        <a href="{{ app.live }}"><img src="../assets/link-live.png" class="round linkCircle" alt=""></a>
+        <a href="{{ app.github }}"><img src="../assets/link-gh.png" class="round linkCircle" alt=""></a>
+      </p>
+    </div>
+  </div>
+</div>

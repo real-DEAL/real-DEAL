@@ -1,46 +1,62 @@
-const router = function ($routeProvider, $httpProvider) {
-  $routeProvider
-    .when('/home', {
-      templateUrl: '../views/home.html',
-      controller: 'homeCtrl',
-    })
-    .when('/apps', {
-      templateUrl: '../views/apps.html',
-      controller: 'appCtrl',
-    })
-    .when('/profile', {
-      templateUrl: '../views/profile.html',
-      controller: 'profileCtrl',
-    })
-    .when('/Breadcrumb', {
-      templateUrl: '../views/apps.html',
-      controller: 'appCtrl',
-    })
-    .when('/Spurr', {
-      templateUrl: '../views/apps.html',
-      controller: 'appCtrl',
-    })
-    .when('/What\'s Happenin\'', {
-      templateUrl: '../views/apps.html',
-      controller: 'appCtrl',
-    })
-    .when('/Cookbook', {
-      templateUrl: '../views/apps.html',
-      controller: 'appCtrl',
-    })
-    .otherwise({
-      redirectTo: '/home',
-    });
-};
-
 angular.module('Portfolio', [
   'appCtrl',
   'appFact',
   'profileCtrl',
   'profileFact',
-  'ngRoute',
+  'ui.router',
 ])
-.config(router)
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    .state('home', {
+      url: '/home',
+      templateUrl: '/views/home.html',
+      controller: 'homeCtrl',
+    })
+    .state('apps', {
+      url: '/apps',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+    })
+    .state('profile', {
+      url: '/profile',
+      templateUrl: '../views/profile.html',
+      controller: 'profileCtrl',
+    })
+    .state('Breadcrumb', {
+      url: '/Breadcrumb',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return appFact.apps.breadcrumb },
+      },
+    })
+    .state('Spurr', {
+      url: '/Spurr',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return appFact.apps.spurr },
+      },
+    })
+    .state('What\'s Happenin\'', {
+      url: '/What\'s Happenin\'',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return appFact.apps.whatsHappenin },
+      },
+    })
+    .state('Cookbook', {
+      url: '/Cookbook',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return appFact.apps.cookbook },
+      },
+    });
+
+  $urlRouterProvider.otherwise('/home');
+})
 .factory('homeFact', function ($window) {
   const orange = '#ff7d00';
   const aqua = '#3bbbb2'
