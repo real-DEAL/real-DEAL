@@ -27,6 +27,7 @@ angular.module('appFact', [])
       'Social media login',
     ],
     github: 'https://github.com/real-DEAL/Breadcrumb',
+    live: 'http://breadcrumb.real-deal.studio',
     style: {
       'background-color': homeFact.purple,
     },
@@ -47,6 +48,7 @@ angular.module('appFact', [])
 
     ],
     github: 'https://github.com/Spurr-App/Spurr-App',
+    live: 'http://spurr.real-deal.studio',
     style: {
       'background-color': homeFact.orange,
     },
@@ -64,44 +66,47 @@ angular.module('appFact', [])
       'Angular',
     ],
     github: 'https://github.com/DeFieldsEPeriou/refactoredGreenfields',
+    live: 'http://whats-happenin.real-deal.studio',
     style: {
       'background-color': homeFact.green,
     },
   };
 
-  apps.fireEmblem = {
-    name: 'Fire Emblem Arena',
-    logo: '../assets/logowh.png',
-    elevator: 'Find out what\'s happenin\' around you',
-    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
-    attributes: [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'Angular',
-    ],
-    github: 'https://github.com/defields/',
-    style: {
-      'background-color': homeFact.green,
-    },
-  };
+  // apps.fireEmblem = {
+  //   name: 'Fire Emblem Arena',
+  //   logo: '../assets/logowh.png',
+  //   elevator: 'Find out what\'s happenin\' around you',
+  //   description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+  //   attributes: [
+  //     'HTML',
+  //     'CSS',
+  //     'Javascript',
+  //     'Angular',
+  //   ],
+  //   github: 'https://github.com/defields/',
+  //   live: 'http://fea.real-deal.studio',
+  //   style: {
+  //     'background-color': homeFact.green,
+  //   },
+  // };
 
-  apps.globalPray = {
-    name: 'Global Pray',
-    logo: '../assets/logowh.png',
-    elevator: 'Find out what\'s happenin\' around you',
-    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
-    attributes: [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'Angular',
-    ],
-    github: 'https://github.com/defields/',
-    style: {
-      'background-color': homeFact.green,
-    },
-  };
+  // apps.globalPray = {
+  //   name: 'Global Pray',
+  //   logo: '../assets/logowh.png',
+  //   elevator: 'Find out what\'s happenin\' around you',
+  //   description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+  //   attributes: [
+  //     'HTML',
+  //     'CSS',
+  //     'Javascript',
+  //     'Angular',
+  //   ],
+  //   github: 'https://github.com/defields/',
+  //   live: 'http://global-pray.real-deal.studio',
+  //   style: {
+  //     'background-color': homeFact.green,
+  //   },
+  // };
 
   apps.cookbook = {
     name: 'Cookbook',
@@ -115,27 +120,29 @@ angular.module('appFact', [])
       'Angular',
     ],
     github: 'https://github.com/defields/',
+    live: 'http://cookbook.real-deal.studio',
     style: {
       'background-color': homeFact.green,
     },
   };
 
-  apps.logoer = {
-    name: 'Logoer',
-    logo: '../assets/logowh.png',
-    elevator: 'Find out what\'s happenin\' around you',
-    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
-    attributes: [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'Angular',
-    ],
-    github: 'https://github.com/defields/',
-    style: {
-      'background-color': homeFact.green,
-    },
-  };
+  // apps.logoer = {
+  //   name: 'Logoer',
+  //   logo: '../assets/logowh.png',
+  //   elevator: 'Find out what\'s happenin\' around you',
+  //   description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+  //   attributes: [
+  //     'HTML',
+  //     'CSS',
+  //     'Javascript',
+  //     'Angular',
+  //   ],
+  //   github: 'https://github.com/defields/',
+  //   live: 'http://logoer.real-deal.studio',
+  //   style: {
+  //     'background-color': homeFact.green,
+  //   },
+  // };
 
   const keys = Object.keys(apps);
 

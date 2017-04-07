@@ -12,11 +12,19 @@ const router = function ($routeProvider, $httpProvider) {
       templateUrl: '../views/profile.html',
       controller: 'profileCtrl',
     })
-    .when('/breadcrumb', {
+    .when('/Breadcrumb', {
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
     })
-    .when('/spurr', {
+    .when('/Spurr', {
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+    })
+    .when('/What\'s Happenin\'', {
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+    })
+    .when('/Cookbook', {
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
     })

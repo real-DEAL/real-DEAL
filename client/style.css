@@ -22,13 +22,19 @@ body {
 }
 
 nav {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);*/
   margin: 0;
   max-height: 100px;
   width: 100%;
   position: fixed;
   z-index: 10000;
+}
+
+nav, .display, footer {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url('assets/jewelBackBigB.png');
 }
 
 nav a, nav a:visited {
@@ -80,8 +86,6 @@ nav li, .display li {
   align-items: center;
   margin: auto;
   text-align: center;
-  background: black;
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .display img {

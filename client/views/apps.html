@@ -10,7 +10,10 @@
       <div class="col-md-4 col-sm-4">
         <h2>{{ app.name }}</h2>
         <p>{{ app.elevator }}</p>
-        <p><a href="{{ app.github }}"><img src="../assets/gh.png" class="round linkCircle" alt=""></a></p>
+        <p>
+          <a href="{{ app.live }}"><img src="../assets/link-live.png" class="round linkCircle" alt=""></a>
+          <a href="{{ app.github }}"><img src="../assets/link-gh.png" class="round linkCircle" alt=""></a>
+        </p>
       </div>
     </div>
   </div>
@@ -18,8 +21,10 @@
     <h1><span ng-if="app">Other </span>Applications</h1>
     <div class="row">
       <div class="col-sm-3 col-xs-6" ng-repeat="(app, data) in apps">
-        <img ng-src="{{ data.logo }}" alt="">
-        <h5>{{ data.name }}</h5>
+        <a href="#/{{ data.name }}">
+          <img ng-src="{{ data.logo }}" alt="">
+          <h5>{{ data.name }}</h5>
+        </a>
       </div>
     </div>
   </div>
