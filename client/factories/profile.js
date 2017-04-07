@@ -85,7 +85,7 @@ angular.module('profileFact', [])
     name1: 'Olivia',
     name2: 'Sabo-Rush',
     img: '../assets/hs-liv.png',
-    bio: 'Originally from Woodinville, Washington, Liv has set up in New Orleans for the past two years. As a software engineer Liv excels at front end design, but is no stranger to server, database, and deployment. With 19 years of dance training, leading her to perform across four countries, Liv brings the best of the art world to the engineering world.',
+    bio: 'Originally from Woodinville, Washington, Liv has set up in New Orleans for the past two years. As a software engineer Liv excels at front end design, but is no stranger to server, database, and deployment. With 19 years of dance training that lead her to perform across four countries, Liv brings the best of the art world to the engineering world. Ask me about my time in South Korea!',
     quote: 'I love crafting software that is not only functional but also beautiful and intuitive for the user.',
     specialties: [
       'HTML',

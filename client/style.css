@@ -1,4 +1,8 @@
- html, .profile {
+html {
+  transition-duration: 1s;
+}
+
+html, .profile {
   background-image: url('assets/jewelBackMed.png');
   background-position: center;
   background-attachment: fixed;
@@ -58,6 +62,10 @@ nav li, .display li {
 
 .display {
   color: #fff;
+}
+
+.display h1 {
+  margin: 50px 0;
 }
 
 .jumbotron, .display {

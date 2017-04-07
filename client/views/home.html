@@ -16,20 +16,20 @@
   </div>
   <div class="display">
     <h1>Products</h1><br>
-    <div>
+    <div ng-controller="appCtrl">
       <div class="col-sm-4 col-xs-12">
         <img src="../assets/spurr/logo.png" alt="">
-        <h3>Spurr</h3>
+        <a href="#/spurr" ng-click="switch('spurr')"><h3>Spurr</h3></a>
         <p>Anonymouse secret sharing app</p>
       </div>
       <div class="col-sm-4 col-xs-12">
         <img src="../assets/logowh.png" alt="">
-        <h3>What's Happenin'</h3>
+        <a href="#/whatsHappenin"  ng-click="switch('whatsHappenin')"><h3>what's Happenin'</h3></a>
         <p>Local event finding app</p>
       </div>
       <div class="col-sm-4 col-xs-12">
         <img src="../assets/breadcrumb/logo.png" alt="">
-        <h3>Breadcrumb</h3>
+        <a href="#/breadcrumb"  ng-click="switch('breadcrumb')"><h3>Breadcrumb</h3></a>
         <p>Touring/creation and app</p>
       </div>
     </div>

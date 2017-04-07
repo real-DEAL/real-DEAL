@@ -1,6 +1,8 @@
 angular.module('appCtrl', [])
-.controller('appCtrl', function ($scope, appFact) {
+.controller('appCtrl', function ($scope, $rootScope, appFact) {
   $scope.shot = 0;
+
+  $scope.apps = appFact.apps;
 
   $scope.next = () => {
     $scope.shot === $scope.app.screenshots.length - 1 ?
@@ -8,7 +10,7 @@ angular.module('appCtrl', [])
     $scope.shot++;
   };
 
-  $scope.switch = (input) => appFact.apps[input];
-
-  $scope.app = $scope.switch('breadcrumb');
+  $scope.switch = (input) => {
+    $rootScope.app = appFact.apps[input];
+  }
 });

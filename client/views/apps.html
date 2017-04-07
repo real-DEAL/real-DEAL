@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <div class="wrapper container">
-  <div class="jumbotron" ng-style="app.style">
+  <div class="jumbotron" ng-if="app">
     <div class="row">
       <div class="col-md-8 col-sm-8">
         <!-- <img ng-src="{{ app.img }}" class="img-responsive"> -->
@@ -11,6 +11,15 @@
         <h2>{{ app.name }}</h2>
         <p>{{ app.elevator }}</p>
         <p><a href="{{ app.github }}"><img src="../assets/gh.png" class="round linkCircle" alt=""></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="display">
+    <h1><span ng-if="app">Other </span>Applications</h1>
+    <div class="row">
+      <div class="col-sm-3 col-xs-6" ng-repeat="(app, data) in apps">
+        <img ng-src="{{ data.logo }}" alt="">
+        <h5>{{ data.name }}</h5>
       </div>
     </div>
   </div>

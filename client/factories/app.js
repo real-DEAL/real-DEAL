@@ -4,7 +4,7 @@ angular.module('appFact', [])
 
   apps.breadcrumb = {
     name: 'Breadcrumb',
-    img: '../assets/breadcrumb/logo.png',
+    logo: '../assets/breadcrumb/logo.png',
     screenshots: [
       '../assets/breadcrumb/s1.png',
       '../assets/breadcrumb/s2.png',
@@ -34,7 +34,7 @@ angular.module('appFact', [])
 
   apps.spurr = {
     name: 'Spurr',
-    img: '../assets/spurr/logo.png',
+    logo: '../assets/spurr/logo.png',
     elevator: 'Your personal PostSecret',
     description: 'Combining Snapchat with PostSecret, Spurr produces a cathartic release of stress and a rush of excitement. Release your tense thoughts while indulging in gossip! Send a secret, get a secret. Get something off your chest by sending it into our ether, then enjoy a secret from someone else sent only to you! Spurr creates an outlet that combines the therapeutic act of revealing secrets with the enjoyment obtained from hearing secrets.',
     techStack: [
@@ -53,8 +53,8 @@ angular.module('appFact', [])
   };
 
   apps.whatsHappenin = {
-    name: 'Breadcrumb',
-    img: '../assets/logowh.png',
+    name: 'What\'s Happenin\'',
+    logo: '../assets/logowh.png',
     elevator: 'Find out what\'s happenin\' around you',
     description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
     attributes: [
@@ -64,6 +64,74 @@ angular.module('appFact', [])
       'Angular',
     ],
     github: 'https://github.com/DeFieldsEPeriou/refactoredGreenfields',
+    style: {
+      'background-color': homeFact.green,
+    },
+  };
+
+  apps.fireEmblem = {
+    name: 'Fire Emblem Arena',
+    logo: '../assets/logowh.png',
+    elevator: 'Find out what\'s happenin\' around you',
+    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+    attributes: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Angular',
+    ],
+    github: 'https://github.com/defields/',
+    style: {
+      'background-color': homeFact.green,
+    },
+  };
+
+  apps.globalPray = {
+    name: 'Global Pray',
+    logo: '../assets/logowh.png',
+    elevator: 'Find out what\'s happenin\' around you',
+    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+    attributes: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Angular',
+    ],
+    github: 'https://github.com/defields/',
+    style: {
+      'background-color': homeFact.green,
+    },
+  };
+
+  apps.cookbook = {
+    name: 'Cookbook',
+    logo: '../assets/logowh.png',
+    elevator: 'Find out what\'s happenin\' around you',
+    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+    attributes: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Angular',
+    ],
+    github: 'https://github.com/defields/',
+    style: {
+      'background-color': homeFact.green,
+    },
+  };
+
+  apps.logoer = {
+    name: 'Logoer',
+    logo: '../assets/logowh.png',
+    elevator: 'Find out what\'s happenin\' around you',
+    description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
+    attributes: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Angular',
+    ],
+    github: 'https://github.com/defields/',
     style: {
       'background-color': homeFact.green,
     },

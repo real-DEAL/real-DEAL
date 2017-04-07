@@ -3,17 +3,22 @@ const router = function ($routeProvider, $httpProvider) {
     .when('/home', {
       templateUrl: '../views/home.html',
       controller: 'homeCtrl',
-      authenticate: true,
     })
     .when('/apps', {
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
-      authenticate: true,
     })
     .when('/profile', {
       templateUrl: '../views/profile.html',
       controller: 'profileCtrl',
-      authenticate: true,
+    })
+    .when('/breadcrumb', {
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+    })
+    .when('/spurr', {
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
     })
     .otherwise({
       redirectTo: '/home',
@@ -38,10 +43,14 @@ angular.module('Portfolio', [
     orange, aqua, purple, green,
   }
 })
-.controller('homeCtrl', function ($scope, $rootScope, homeFact, profileFact) {
+.controller('homeCtrl', function ($scope, $rootScope, homeFact, appFact, profileFact) {
   const name = () => profileFact.keys[Math.floor(Math.random() * 4)];
 
   $scope.test = (input) => { console.warn(input) };
+
+  console.log($scope, $rootScope);
+
+  // $rootScope.app = appFact.apps.spurr;
 
   $rootScope.person = profileFact.dev(name());
 
