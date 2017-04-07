@@ -4,4 +4,4 @@ COPY . /app
 WORKDIR /app
 COPY package.json /app
 RUN npm install
-CMD sudo pm2-docker app.js
+CMD npm start
