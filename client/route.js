@@ -11,11 +11,17 @@ angular.module('Portfolio', [
       url: '/home',
       templateUrl: '/views/home.html',
       controller: 'homeCtrl',
+      resolve: {
+        app: function(appFact) { return null },
+      },
     })
     .state('apps', {
       url: '/apps',
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return null },
+      },
     })
     .state('profile', {
       url: '/profile',

@@ -1,16 +1,12 @@
 angular.module('appCtrl', [])
-.controller('appCtrl', function ($scope, $rootScope, $resolve, appFact) {
+.controller('appCtrl', function ($scope, $rootScope, $resolve, appFact, app) {
   console.log($scope)
 
   // if ($resolve.app) {
-  //   $rootScope.app = $resolve.app;
+  $rootScope.app = app;
   // }
 
-  $rootScope.app = $resolve.app || null;
-
-  $resolve.$watch('app', function(newValue, oldValue) {
-    console.log(newValue, oldValue);
-  });
+  // $rootScope.app = $resolve.app || null;
 
   $scope.shot = 0;
 
