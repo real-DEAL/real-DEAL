@@ -2,25 +2,44 @@
 <div class="wrapper container">
   <div class="jumbotron" ng-if="app">
     <div class="row">
-      <div class="col-md-8 col-sm-8">
-        <!-- <img ng-src="{{ app.img }}" class="img-responsive"> -->
-        <img ng-src="{{ app.screenshots[shot] }}" ng-click="next()" class="img-responsive">
+      <div class="col-md-8 col-sm-8 center-t">
+        <p>
+          <img ng-src="{{ app.screenshots[shot] }}" ng-click="next()" height="350">
+        </p>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              <a href="{{ app.live }}"><img src="../assets/link-live.png" class="round linkCircle" alt=""></a>
+              <a href="{{ app.github }}"><img src="../assets/link-gh.png" class="round linkCircle" alt=""></a>
+            </p>
+          </div>
+          <div class="col-sm-4 col-xs-6 left">
+            <h4>Tech stack</h4>
+            <ul>
+              <li ng-repeat="tech in app.techStack">{{ tech }}</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-xs-6 left">
+            <h4>Features</h4>
+            <ul>
+              <li ng-repeat="attr in app.attributes">{{ attr }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="col-md-4 col-sm-4">
         <h2>{{ app.name }}</h2>
-        <p>{{ app.elevator }}</p>
-        <p>
-          <a href="{{ app.live }}"><img src="../assets/link-live.png" class="round linkCircle" alt=""></a>
-          <a href="{{ app.github }}"><img src="../assets/link-gh.png" class="round linkCircle" alt=""></a>
-        </p>
+        <h4>{{ app.elevator }}</h4>
+        <p>{{ app.description }}</p>
+
       </div>
     </div>
   </div>
   <div class="display">
     <h1><span ng-if="app">Other </span>Applications</h1>
     <div class="row">
-      <div class="col-sm-3 col-xs-6" ng-repeat="(app, data) in apps">
+      <div class="col-sm-4 col-xs-12" ng-repeat="(app, data) in apps">
         <a href="#/{{ data.name }}">
           <img ng-src="{{ data.logo }}" alt="">
           <h5>{{ data.name }}</h5>

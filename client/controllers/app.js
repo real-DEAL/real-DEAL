@@ -10,7 +10,11 @@ angular.module('appCtrl', [])
 
   $scope.shot = 0;
 
-  $scope.apps = appFact.apps;
+  $scope.apps = [
+    appFact.apps.breadcrumb,
+    appFact.apps.spurr,
+    appFact.apps.whatsHappenin,
+  ];
 
   $scope.next = () => {
     $scope.shot === $scope.app.screenshots.length - 1 ?

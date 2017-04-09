@@ -10,6 +10,7 @@ html, .profile {
 
 a,  a:visited  {
   color: #999;
+  font-weight: bold;
 }
 
 a:hover, a:active {
@@ -35,6 +36,7 @@ nav, .display, footer {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
   background-image: url('assets/jewelBackBigB.png');
+  background-position: center;
 }
 
 nav a, nav a:visited {
@@ -59,9 +61,9 @@ nav li, .display li {
 
 .jumbotron, .container .jumbotron {
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   background-image: url('assets/jewelBackBig.png');
   background-position: center;
 }
@@ -178,5 +180,13 @@ footer {
 
 .center>img {
   height: 300px;
-  width: 300px;
+  /*width: 300px;*/
+}
+
+.center-t {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
 }

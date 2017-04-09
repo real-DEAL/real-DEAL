@@ -52,6 +52,14 @@ angular.module('Portfolio', [
         app: function(appFact) { return appFact.apps.whatsHappenin },
       },
     })
+    .state('Fire Emblem Arena', {
+      url: '/Fire Emblem Arena',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: function(appFact) { return appFact.apps.fireEmblem },
+      },
+    })
     .state('Cookbook', {
       url: '/Cookbook',
       templateUrl: '../views/apps.html',
