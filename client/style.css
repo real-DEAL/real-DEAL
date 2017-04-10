@@ -59,6 +59,10 @@ nav li, .display li {
   padding-top: 50px;
 }
 
+.container {
+  min-width: 450px;
+}
+
 .jumbotron, .container .jumbotron {
   border: none;
   border-radius: 0;
@@ -157,20 +161,20 @@ footer {
 
 .choices {
   display: flex;
-  width: 480px;
+  width: 380px;
   margin: auto;
 }
 
 .devName {
-  border-radius: 10px;
-  margin: 10px;
-  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 25px;
+  min-width: 85px;
+  font-weight: bold;
   text-align: center;
+  border-radius: 5px;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
-  font-size: 25px;
-  font-weight: bold;
-  padding: 15px;
 }
 
 .center {
