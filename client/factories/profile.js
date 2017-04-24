@@ -7,7 +7,7 @@ angular.module('profileFact', [])
     name2: 'Lai',
     img: '../assets/hs-alice.png',
     bio: 'Born in New York City and raised in New Orleans, Alice has studied in Paris and worked in Hong Kong.  Having always had a passion for social innovation and having come from a social entrepreneurship background, she spent the last six months learning and building projects in JavaScript and its numerous frameworks/libraries such as Angular and React, as well as on Node. She hopes to make the world a better place through her newfound love for technological innovation. ',
-    quote: 'Social entrepreneurs are not content just to give a fish or teach how to fish. They will not rest until they have revolutionized the fishing industry. -Bill Drayton',
+    quote: 'Social entrepreneurs are not content just to give a fish or teach how to fish. They will not rest until they have revolutionized the fishing industry. \r-Bill Drayton',
     specialties: ['JavaScript', 'ES6', 'Angular', 'React', 'Nodal', 'SQL/NoSQL', 'Express', 'Ionic', 'Cordova', 'HTML', 'CSS'],
     projects: [
       'Global Pray',
@@ -118,6 +118,7 @@ angular.module('profileFact', [])
 
   return {
     dev,
+    devs,
     keys,
   };
 });

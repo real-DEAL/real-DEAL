@@ -72,14 +72,14 @@ angular.module('Portfolio', [
   $urlRouterProvider.otherwise('/home');
 })
 .factory('homeFact', function ($window) {
-  const orange = '#ff7d00';
-  const aqua = '#3bbbb2'
-  const purple = '#9d30ac'
-  const green = '#39c366'
-
-  return {
-    orange, aqua, purple, green,
+  const colors = {
+    orange: '#ff7d00',
+    aqua: '#3bbbb2',
+    purple: '#9d30ac',
+    green: '#39c366',
   }
+
+  return colors;
 })
 .controller('homeCtrl', function ($scope, $rootScope, homeFact, appFact, profileFact) {
   const name = () => profileFact.keys[Math.floor(Math.random() * 4)];
@@ -88,7 +88,7 @@ angular.module('Portfolio', [
 
   console.log($scope, $rootScope);
 
-  // $rootScope.app = appFact.apps.spurr;
+  $scope.devs = profileFact.devs;
 
   $rootScope.person = profileFact.dev(name());
 

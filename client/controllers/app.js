@@ -22,7 +22,18 @@ angular.module('appCtrl', [])
     $scope.shot++;
   };
 
+  $scope.change = () => {
+    setTimeout(function() {
+      console.log('change');
+      $scope.next();
+      $scope.$apply();
+      $scope.change();
+    }, 4000);
+  }
+
   $scope.switch = (input) => {
     $rootScope.app = appFact.apps[input];
   }
+
+  $scope.change();
 });
