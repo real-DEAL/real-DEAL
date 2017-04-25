@@ -36,8 +36,8 @@
               </div>
               <div class="col-sm-6 col-xs-6">
                 <h4>Projects</h4>
-                <ul>
-                  <li ng-repeat="project in person.projects"><a ui-sref="{{ project }}" >{{ project }}</a></li>
+                <ul class="list">
+                  <a ng-repeat="project in person.projects" ui-sref="{{ project }}" ><li ng-style="style">{{ project }}</li></a>
                 </ul>
               </div>
             </div>
