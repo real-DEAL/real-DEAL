@@ -24,7 +24,7 @@ angular.module('Portfolio', [
       },
     })
     .state('profile', {
-      url: '/profile',
+      url: '/profile?id',
       templateUrl: '../views/profile.html',
       controller: 'profileCtrl',
     })

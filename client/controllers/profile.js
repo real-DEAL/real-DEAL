@@ -1,5 +1,5 @@
 angular.module('profileCtrl', [])
-.controller('profileCtrl', function ($scope, $rootScope, profileFact) {
+.controller('profileCtrl', function ($scope, $rootScope, profileFact, $stateParams) {
   $scope.devs = [
     'Alice',
     'Devin',
@@ -11,4 +11,6 @@ angular.module('profileCtrl', [])
     $rootScope.person = profileFact.dev(name);
     $rootScope.style = $scope.person.style;
   };
+
+  if ($stateParams.id < 4) $scope.switch($scope.devs[$stateParams.id]);
 });
