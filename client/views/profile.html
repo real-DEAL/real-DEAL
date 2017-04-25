@@ -30,8 +30,8 @@
             <div class="row">
               <div class="col-sm-6 col-xs-6">
                 <h4>Specialties</h4>
-                <ul>
-                  <li ng-repeat="spec in person.specialties">{{ spec }}</li>
+                <ul class="list">
+                  <li ng-repeat="spec in person.specialties" ng-style="style">{{ spec }}</li>
                 </ul>
               </div>
               <div class="col-sm-6 col-xs-6">

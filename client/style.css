@@ -212,16 +212,16 @@ footer {
   text-align: left;
 }
 
-.tech li {
-  display: inline-block;
-  padding: 10px;
-  margin: 5px;
+.list li {
   color: #fff;
-  background-image: url('assets/button.png');
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
   background-position: right;
   background-repeat: no-repeat;
+  background-image: url('assets/button.png');
 }
 
-.tech li:hover {
+.list li:hover {
   background-image: url('assets/button-hover.png');
 }
