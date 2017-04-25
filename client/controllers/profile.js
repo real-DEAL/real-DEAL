@@ -12,5 +12,5 @@ angular.module('profileCtrl', [])
     $rootScope.style = $scope.person.style;
   };
 
-  if ($stateParams.id < 4) $scope.switch($scope.devs[$stateParams.id]);
+  if ($stateParams.id < 4 && $stateParams.id > -1) $scope.switch($scope.devs[$stateParams.id]);
 });
