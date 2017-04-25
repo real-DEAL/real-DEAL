@@ -1,5 +1,5 @@
 angular.module('appFact', [])
-.factory('appFact', function (homeFact) {
+.factory('appFact', function () {
   const techs = {
     HTML: [
       'HTML',
@@ -121,25 +121,29 @@ angular.module('appFact', [])
       techs.Travis,
     ],
     attributes: [
+      // [
+      //   'One page app',
+      //   '',
+      // ],
       [
-        'One page app',
-        '',
+        'Augmented reality',
+        'Combined ezAR, camera, gyroscope, accelerometer, compass to display messages on camera at specific coordinates'
       ],
       [
-        'Social media login',
-        '',
+        'Social media connection',
+        'One click log in/sign up for Facebook and Twitter',
       ],
       [
         'Google Maps API',
-        '',
+        'Provides users a map of their full trails',
       ],
       [
         'Leaflet API',
-        '',
+        'Allows multiple dynamic maps to be used on one page simultaneously',
       ],
       [
         'Cloudinary image hosting',
-        '',
+        'Serves as our image hosting service',
       ],
     ],
     github: 'https://github.com/real-DEAL/Breadcrumb',
@@ -172,12 +176,16 @@ angular.module('appFact', [])
     ],
     attributes: [
       [
-        'Single page app',
-        '',
+        'Getty Images API',
+        'Access to large library of searchable images to provide a variety of background options',
       ],
       [
-        'Getty Images API',
-        '',
+        'Incredible font library',
+        'Used Web Font Loader to acquire a large selection of fonts to and increase visual variety',
+      ],
+      [
+        'Social media connection',
+        'Facebook and Twitter share buttons so data can be populated for entertainment and advertisement',
       ],
     ],
     github: 'https://github.com/Spurr-App/Spurr-App',
@@ -192,8 +200,6 @@ angular.module('appFact', [])
       '../assets/whatsHappenin/s2.png',
       '../assets/whatsHappenin/s3.png',
       '../assets/whatsHappenin/s1.png',
-      // '../assets/whatsHappenin/s4.png',
-      // '../assets/whatsHappenin/s5.png',
     ],
     elevator: 'Find out what\'s happenin\' around you',
     description: 'Are you bored? Got a few free hours to play a pickup game? Want to find the best happy hours in the city? What\'s Happenin\' lets you know exactly what\'s happein\' around you right now! Find nearby events, or create your own. You\'ll never be bored again now that you know What\'s Happenin\'!',
@@ -209,11 +215,15 @@ angular.module('appFact', [])
     attributes: [
       [
         'Google Maps API',
-        '',
+        'Implemented Google Maps through React-Gmaps for its accessibility, ease of use, alterability, and familiarity',
+      ],
+      [
+        'Google Calendars API',
+        'Integrated Google Calendars for easy auto-population of fields and insertion of data into calendar',
       ],
       [
         'Tinypic plugin',
-        '',
+        'Supports local image uploads directly in the app',
       ],
     ],
     github: 'https://github.com/DeFieldsEPeriou/refactoredGreenfields',
