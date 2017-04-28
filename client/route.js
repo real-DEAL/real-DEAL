@@ -12,7 +12,7 @@ angular.module('Portfolio', [
       templateUrl: '/views/home.html',
       controller: 'homeCtrl',
       resolve: {
-        app: function(appFact) { return null },
+        app: (appFact) => null,
       },
     })
     .state('apps', {
@@ -20,7 +20,7 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return null },
+        app: (appFact) => null,
       },
     })
     .state('profile', {
@@ -33,7 +33,7 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return appFact.apps.breadcrumb },
+        app: (appFact) => appFact.apps.breadcrumb,
       },
     })
     .state('Spurr', {
@@ -41,7 +41,7 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return appFact.apps.spurr },
+        app: (appFact) => appFact.apps.spurr,
       },
     })
     .state('What\'s Happenin\'', {
@@ -49,7 +49,15 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return appFact.apps.whatsHappenin },
+        app: (appFact) => appFact.apps.whatsHappenin,
+      },
+    })
+    .state('Ali-gle', {
+      url: '/Ali-gle',
+      templateUrl: '../views/apps.html',
+      controller: 'appCtrl',
+      resolve: {
+        app: (appFact) => appFact.apps['ali-gle'],
       },
     })
     .state('Fire Emblem Arena', {
@@ -57,7 +65,7 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return appFact.apps.fireEmblem },
+        app: (appFact) => appFact.apps.fireEmblem,
       },
     })
     .state('Cookbook', {
@@ -65,7 +73,7 @@ angular.module('Portfolio', [
       templateUrl: '../views/apps.html',
       controller: 'appCtrl',
       resolve: {
-        app: function(appFact) { return appFact.apps.cookbook },
+        app: (appFact) => appFact.apps.cookbook,
       },
     });
 

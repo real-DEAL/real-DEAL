@@ -14,6 +14,7 @@ angular.module('appCtrl', [])
     appFact.apps.breadcrumb,
     appFact.apps.spurr,
     appFact.apps.whatsHappenin,
+    appFact.apps['ali-gle'],
   ];
 
   $scope.next = () => {

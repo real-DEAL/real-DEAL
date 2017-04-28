@@ -47,10 +47,10 @@
     </div>
   </div>
 
-  <div class="display">
+  <div class="display apps">
     <h1><span ng-if="app">Other </span>Applications</h1>
     <div class="row">
-      <div class="col-sm-4 col-xs-12" ng-repeat="(app, data) in apps">
+      <div class="col-sm-4 col-xs-12 app" ng-repeat="(app, data) in apps">
         <a href="#/{{ data.name }}">
           <img ng-src="{{ data.logo }}" alt="">
           <h5>{{ data.name }}</h5>

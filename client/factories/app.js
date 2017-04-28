@@ -230,6 +230,36 @@ angular.module('appFact', [])
     live: 'http://whatshappenin.real-deal.studio',
   };
 
+  apps['ali-gle'] = {
+    name: 'Ali-gle',
+    logo: '../assets/ali-gle/logo.png',
+    logoColor: '../assets/ali-gle/logo-color.png',
+    screenshots: [
+      '../assets/ali-gle/s1.png',
+      '../assets/ali-gle/s2.png',
+      '../assets/ali-gle/s3.png',
+    ],
+    description: 'Ever get stuck while developing? Never fear! The Ali-gle is here! Just type your question into the bug bar and bask in the Ali-gle\'s knowledge.',
+    techStack: [
+      techs.HTML,
+      techs.CSS,
+      techs.JavaScript,
+      techs.AngularJS,
+      techs.AWS,
+      techs.Docker,
+      techs.NodeJS,
+      techs.Express,
+    ],
+    attributes: [
+      [
+        'Custom Google Search',
+        'Provides results from tech sources like GitHub, Stack Overflow, and Mozilla Developer Network',
+      ],
+    ],
+    github: 'https://github.com/livrush/ali-gle',
+    live: 'http://ali-gle.real-deal.studio',
+  };
+
   apps.fireEmblem = {
     name: 'Fire Emblem Arena',
     logo: null,
