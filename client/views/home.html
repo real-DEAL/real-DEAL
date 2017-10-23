@@ -4,15 +4,13 @@
 
   <!-- TOP -->
   <div class="display back-w">
-    <div class="row">
-      <div class="col-sm-7">
+    <div class="row full">
+      <div class="col-sm-7 xs-center">
         <img class="icon invert visible-xs margin-bottom-30" src="../assets/logobw.png" alt="">
-        <h1>
-          Real-DEAL
-        </h1>
-        <p>Real-DEAL is a team of software engineers creating exciting new applications.</p>
+        <h1>Real-DEAL</h1>
+        <h4 class="feature-20">Real-DEAL is a team of software engineers creating exciting new applications</h4>
         <h3>Learn about <a href="#/profile">who we are</a></h3>
-        <h3>and <a href="#/apps">what we make</a>.</h3>
+        <h3>and <a href="#/apps">what we make</a></h3>
       </div>
       <div class="col-sm-5 hidden-xs center">
         <img class="invert" src="../assets/logobw.png" alt="">
@@ -50,15 +48,15 @@
 
   <!-- SPOTLIGHT -->
   <div class="display back-w">
-    <div class="row" ng-controller="profileCtrl">
+    <div class="row margin-bottom-30" ng-controller="profileCtrl">
       <div class="col-sm-5 center">
-        <img src="{{ person.img }}" class="margin-bottom-30" alt="">
+        <img src="{{ person.img }}" alt="">
       </div>
       <div class="col-sm-7">
         <h1>
           Meet {{ person.name1 }}
         </h1>
-        <p>{{ person.bio }}</p>
+        <p class="feature">{{ person.bio }}</p>
         <p>Learn more about {{ person.name1 }} <a href="#/profile">here</a>!</p>
       </div>
     </div>

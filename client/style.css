@@ -102,6 +102,10 @@ nav li {
     width: 50px;
     border-radius: 100%;
   }
+
+  .xs-center {
+    text-align: center;
+  }
 }
 
 .dot, .list li {
@@ -152,10 +156,6 @@ button {
   width: 75%;
   height: auto;
 }
-
-/* .jumbotron, .display {
-  margin: 0;
-} */
 
 .display, footer {
   display: flex;
@@ -266,6 +266,10 @@ footer {
   text-align: left;
 }
 
+.right {
+  text-align: right;
+}
+
 .list {
   padding-left: 0;
 }
@@ -308,4 +312,8 @@ h1 {
 .feature {
   font-size: 16px;
   text-align: justify;
+}
+
+.feature-20 {
+  font-size: 20px;
 }
