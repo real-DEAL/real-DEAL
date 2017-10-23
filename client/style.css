@@ -36,6 +36,7 @@ nav {
   display: flex;
   justify-content: space-between;
   max-height: 100px;
+  white-space: nowrap;
 }
 
 .icon {
@@ -73,6 +74,7 @@ nav ul, .flat-list {
   padding: 0;
   display: flex;
   align-items: center;
+  z-index: 51;
 }
 
 nav li {
@@ -96,11 +98,26 @@ nav li {
   margin: auto;
 }
 
+@media(max-width:500px){
+  .hidden-500 {
+    display: none;
+  }
+}
+
 @media(max-width:767px){
-  .dot {
+  /* .dot {
     height: 50px;
     width: 50px;
     border-radius: 100%;
+  } */
+
+  .dot-w {
+    background-color: #ccc;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 25px;
+    top: 12.5px;
   }
 
   .xs-center {
@@ -114,10 +131,10 @@ nav li {
 
 .styles {
   position: fixed;
-  right: 15px;
-  top: 50px;
+  right: 25px;
+  top: 62.5px;
   transition: 1000ms;
-  transform: translateY(-120%);
+  transform: translateY(-200%);
 }
 
 .styles.open {
@@ -291,6 +308,10 @@ footer {
 .list li:hover {
   background-image: url('assets/button-hover.png');
   cursor: pointer;
+}
+
+.margin-bottom-12-5 {
+  margin-bottom: 12.5px;
 }
 
 .margin-bottom-15 {

@@ -23,13 +23,18 @@
   <body>
     <nav class="back-b">
       <ul>
-        <a href="#/home"><li><img src="assets/logo.png" alt="" height="50"></li></a>
-        <a href="#/home"><li>Real-DEAL</li></a>
-        <a href="#/profile"><li>About</li></a>
-        <a href="#/apps"><li>Apps</li></a>
-        <b><li class="visible-xs dropdown" ng-controller="profileCtrl" ng-click="toggleStyle()">Style</li></b>
+        <li><a href="#/home"><img src="assets/logo.png" alt="" height="50"></a></li>
+        <li><a href="#/home">Real-DEAL</a></li>
+        <li><a href="#/profile">About</a></li>
+        <li><a href="#/apps">Apps</a></li>
       </ul>
-      <ul class="hidden-xs">
+      <div
+        class="dot dot-w visible-xs"
+        ng-controller="profileCtrl"
+        ng-click="toggleStyle()"
+      >
+      </div>
+      <ul class="hidden-500">
         <li
           class="dot"
           ng-controller="profileCtrl"
@@ -39,16 +44,16 @@
         >
         </li>
       </ul>
-      <div class="visible-xs styles">
-        <div
-          class="dot margin-bottom-15"
-          ng-controller="profileCtrl"
-          ng-repeat="dev in devs"
-          ng-click="switch(dev.name1)"
-          ng-style="{'background-color':'{{dev.color}}'}"
-          >
-      </div>
-    </nav>
+    </nav>    
+    <div class="visible-xs styles">
+      <div
+        class="dot margin-bottom-12-5"
+        ng-controller="profileCtrl"
+        ng-repeat="dev in devs"
+        ng-click="switch(dev.name1)"
+        ng-style="{'background-color':'{{dev.color}}'}"
+      ></div>
+    </div>
 
     <div ui-view autoscroll="true"></div>
 
