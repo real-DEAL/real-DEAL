@@ -12,5 +12,9 @@ angular.module('profileCtrl', [])
     $rootScope.style = $scope.person.style;
   };
 
+  $scope.toggleStyle = () => {
+    $('.styles.open').length ? $('.styles.open').removeClass('open') : $('.styles').addClass('open');
+  };
+
   if ($stateParams.id < 4 && $stateParams.id > -1) $scope.switch($scope.devs[$stateParams.id]);
 });

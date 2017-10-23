@@ -10,23 +10,26 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Raleway:400,800" rel="stylesheet">      
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <meta property="og:image" content="assets/logo.png" />
     <meta property="og:description" content="Real-DEAL is a team of software engineers creating exciting new applications." />
     <meta property="og:url" content="http://www.real-deal.studio/" />
     <meta property="og:title" content="Real-DEAL Portfolio" />
   </head>
   <body>
-    <nav>
+    <nav class="back-b">
       <ul>
         <a href="#/home"><li><img src="assets/logo.png" alt="" height="50"></li></a>
         <a href="#/home"><li>Real-DEAL</li></a>
         <a href="#/profile"><li>About</li></a>
         <a href="#/apps"><li>Apps</li></a>
+        <b><li class="visible-xs dropdown" ng-controller="profileCtrl" ng-click="toggleStyle()">Style</li></b>
       </ul>
-      <ul>
+      <ul class="hidden-xs">
         <li
           class="dot"
           ng-controller="profileCtrl"
@@ -36,6 +39,15 @@
         >
         </li>
       </ul>
+      <div class="visible-xs styles">
+        <div
+          class="dot margin-bottom-15"
+          ng-controller="profileCtrl"
+          ng-repeat="dev in devs"
+          ng-click="switch(dev.name1)"
+          ng-style="{'background-color':'{{dev.color}}'}"
+          >
+      </div>
     </nav>
 
     <div ui-view autoscroll="true"></div>

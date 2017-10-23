@@ -2,15 +2,15 @@
 <div class="wrapper profile">
   <div class="container">
 
-    <div class="choices">
+    <div class="choices margin-bottom-15">
       <div ng-click="switch(dev)" ng-repeat="dev in devs" class="devName">{{ dev }}</div>
     </div>
 
     <div class="row">
-      <div class="col-sm-3 center">
-        <h1>
+      <div class="col-sm-4 center margin-bottom-15">
+        <div>
           <img ng-src="{{ person.img }}" class="hex img-responsive" alt="">
-        </h1>
+        </div>
         <div class="mail">
           <a href="mailto:{{ person.email }}"><img src="../assets/link-mail.png" class="round linkCircle" alt=""></a>
           <a href="{{ person.github }}"><img src="../assets/link-gh.png" class="round linkCircle" alt=""></a>
@@ -18,24 +18,23 @@
         </div>
       </div>
 
-      <div class="col-sm-9">
-        <h3 class="quote">{{ person.quote }}</h3>
+      <div class="col-sm-8">
         <div class="row main">
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <h1 style="margin-top: 10px;">{{ person.name1 }} {{ person.name2 }}</h1>
-            {{ person.bio }}
+            <h2 style="margin-top: 10px;">{{ person.name1 }} {{ person.name2 }}</h2>
+            <p>{{ person.bio }}</p>
           </div>
 
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="row">
               <div class="col-sm-6 col-xs-6">
-                <h4>Specialties</h4>
+                <h3>Specialties</h3>
                 <ul class="list">
                   <li ng-repeat="spec in person.specialties" ng-style="style">{{ spec }}</li>
                 </ul>
               </div>
               <div class="col-sm-6 col-xs-6">
-                <h4>Projects</h4>
+                <h3>Projects</h3>
                 <ul class="list">
                   <a ng-repeat="project in person.projects" ui-sref="{{ project }}" ><li ng-style="style">{{ project }}</li></a>
                 </ul>
