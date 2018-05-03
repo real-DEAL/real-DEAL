@@ -1,6 +1,6 @@
 # Real-DEAL
 
-![Real-DEAL](client/assets/logo.png)
+![Real-DEAL](docs/assets/logo.png)
 
 ## Collaborations by
 

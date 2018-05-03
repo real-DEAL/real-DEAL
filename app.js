@@ -9,7 +9,7 @@ const HOST = process.env.HOST;
 
 console.log(PORT);
 
-app.use(express.static(path.join(__dirname, '/client')));
+app.use(express.static(path.join(__dirname, '/docs')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

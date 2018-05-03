@@ -94,8 +94,6 @@ angular.module('Portfolio', [
 
   $scope.test = (input) => { console.warn(input) };
 
-  console.log($scope, $rootScope);
-
   $scope.devs = profileFact.devs;
 
   $rootScope.person = profileFact.dev(name());

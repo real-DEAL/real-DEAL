@@ -1,6 +1,5 @@
 angular.module('appCtrl', [])
 .controller('appCtrl', function ($scope, $rootScope, $resolve, appFact, app) {
-  console.log($scope)
 
   // if ($resolve.app) {
   $rootScope.app = app;
@@ -32,8 +31,13 @@ angular.module('appCtrl', [])
     }, 4000);
   }
 
-  $scope.switch = (input) => {
+  $scope.switch = input => {
     $rootScope.app = appFact.apps[input];
+  }
+
+  $scope.changeStyle = input => {
+    console.log(input);
+    $rootScope.style = profileFact.dev(input).style;
   }
 
   $scope.change();
