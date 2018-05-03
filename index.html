@@ -39,7 +39,7 @@
           class="dot"
           ng-controller="profileCtrl"
           ng-repeat="dev in devs"
-          ng-click="changeStyle(dev.name1)"
+          ng-click="switch(dev.name1)"
           ng-style="{'background-color':'{{dev.color}}'}"
         >
         </li>
