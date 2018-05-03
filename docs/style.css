@@ -20,6 +20,12 @@ a:hover, a:active {
 body {
   margin: 0;
   background: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.profile {
+  font-size: 14px;
 }
 
 nav {
@@ -30,12 +36,32 @@ nav {
   display: flex;
   justify-content: space-between;
   max-height: 100px;
+  white-space: nowrap;
 }
 
-nav, .display, footer {
-  background-color: black;
+.icon {
+  width: 100px;
+  margin: auto;  
+}
+
+.display {
+  padding: 30px;
+}
+
+.back-b {
+  color: #fff;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
   background-image: url('assets/jewelBackBigB.png');
+  background-position: center;
+}
+
+.back-w {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url('assets/jewelBackBig.png');
   background-position: center;
 }
 
@@ -43,16 +69,22 @@ nav a, nav a:visited {
   color: #fff;
 }
 
-nav ul, .display ul {
+nav ul, .flat-list {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  z-index: 51;
 }
 
-nav li, .display li {
+nav li {
   list-style: none;
-  margin-right: 25px;
+  margin: 0 25px 0 0;
+}
+
+.display li {
+  list-style: none;
+  margin: 0 12px;
 }
 
 .dot {
@@ -61,8 +93,52 @@ nav li, .display li {
   border-radius: 100%;
 }
 
+.hex {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media(max-width:500px){
+  .hidden-500 {
+    display: none;
+  }
+}
+
+@media(max-width:767px){
+  /* .dot {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  } */
+
+  .dot-w {
+    background-color: #ccc;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 25px;
+    top: 12.5px;
+  }
+
+  .xs-center {
+    text-align: center;
+  }
+}
+
 .dot, .list li {
   background-image: url('assets/button.png');
+}
+
+.styles {
+  position: fixed;
+  right: 25px;
+  top: 62.5px;
+  transition: 1000ms;
+  transform: translateY(-200%);
+}
+
+.styles.open {
+  transform: translateY(0);
 }
 
 button {
@@ -73,30 +149,16 @@ button {
   padding-top: 50px;
 }
 
-.container {
-  min-width: 450px;
+.apps h2 {
+  margin-top: 0;
 }
 
-.jumbotron, .container .jumbotron, .photo {
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.9);
-  background-image: url('assets/jewelBackBig.png');
-  background-position: center;
-}
-
-.display {
-  color: #fff;
-}
-
-.display h1 {
-  margin: 0;
-  /*margin-bottom: 50px;*/
+.apps h4 {
+  font-weight: bold;
 }
 
 .apps {
-  padding: 60px 48px;
+  font-size: 14px;
 }
 
 .app {
@@ -112,31 +174,20 @@ button {
   height: auto;
 }
 
-.jumbotron, .display {
-  min-height: 400px;
-  margin: 0;
-}
-
 .display, footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  text-align: center;
 }
 
-.display img {
-  width: 30%;
-}
-
-.display img:hover {
+.products img:hover {
   filter: invert(50%);
 }
 
 footer {
-  height: 200px;
-  color: #fff;
+  padding: 30px;
 }
 
 .profile {
@@ -205,7 +256,6 @@ footer {
   padding: 5px;
   font-size: 25px;
   min-width: 85px;
-  font-weight: bold;
   text-align: center;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.9);
@@ -221,7 +271,7 @@ footer {
 }
 
 .center>img {
-  height: 300px;
+  height: 250px;
   /*width: 300px;*/
 }
 
@@ -233,12 +283,17 @@ footer {
   text-align: left;
 }
 
+.right {
+  text-align: right;
+}
+
 .list {
   padding-left: 0;
 }
 
-.list a {
+.list a, .list a:hover, .list a:visited {
   text-decoration: none;
+  font-weight: normal;
 }
 
 .list li {
@@ -253,4 +308,33 @@ footer {
 .list li:hover {
   background-image: url('assets/button-hover.png');
   cursor: pointer;
+}
+
+.margin-bottom-12-5 {
+  margin-bottom: 12.5px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-30, h1 {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 800;  
+}
+
+.full {
+  width: 100%;
+}
+
+.feature {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.feature-20 {
+  font-size: 20px;
 }
