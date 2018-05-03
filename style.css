@@ -88,9 +88,10 @@ nav li {
 }
 
 .dot {
+  border-radius: 100%;
+  cursor: pointer;
   height: 25px;
   width: 25px;
-  border-radius: 100%;
 }
 
 .hex {
@@ -297,12 +298,13 @@ footer {
 }
 
 .list li {
-  color: #fff;
-  margin: 5px;
-  padding: 10px;
-  display: inline-block;
   background-repeat: no-repeat;
   background-position: right top;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  transition: 1s;
 }
 
 .list li:hover {
