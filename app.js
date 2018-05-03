@@ -5,14 +5,7 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT;
 const HOST = process.env.HOST;
-
-
-console.log(PORT);
-
-app.use(express.static(path.join(__dirname, '/docs')));
+app.use(express.static(path.join(__dirname)));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.listen(PORT, function() {
-  console.log(`listening at http://${HOST}:${PORT}`);
-});
+app.listen(PORT, function() { console.log(`listening at http://${HOST}:${PORT}`); });
